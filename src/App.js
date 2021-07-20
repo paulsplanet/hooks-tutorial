@@ -1,12 +1,14 @@
-import React from "react";
-import Counter from "./Counter";
+import React, { useState } from "react";
 import Info from "./Info";
 
 function App() {
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
-      <Counter />
-      <Info />
+      <button onClick={() => {setVisible(!visible)}}>{visible ? "Hide" : "Show"}</button>
+      <hr />
+      {visible && <Info />}
     </>
   );
 }
