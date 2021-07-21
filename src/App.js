@@ -1,6 +1,15 @@
-import React, { useState } from "react";
-import Info from "./Info";
+import React from "react";
+import ReducerInfo from "./ReducerInfo";
 
+
+const App = () => {
+  return <ReducerInfo />
+}
+
+export default App;
+
+
+/* useEffect practice
 function App() {
   const [visible, setVisible] = useState(false);
 
@@ -12,5 +21,4 @@ function App() {
     </>
   );
 }
-
-export default App;
+*/
